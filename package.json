@@ -1,0 +1,22 @@
+{
+  "name": "@yuanchuan/seq",
+  "version": "1.0.0",
+  "description": "Generate strings from a sequence",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuanchuan/seq.git"
+  },
+  "keywords": [
+    "seq"
+  ],
+  "author": "yuanchuan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuanchuan/seq/issues"
+  },
+  "homepage": "https://github.com/yuanchuan/seq#readme"
+}
