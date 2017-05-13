@@ -20,25 +20,5 @@ seq(99, 1)`
 npm i @yuanchuan/seq
 ```
 
-## Examples
-
-```javascript
-const seq = require('@yuanhuan/seq');
-
-// sequence from an array
-seq(['chrome', 'firefox'])`
-  #{n} has a length of #{n.length}
-`
-
-// sequence with step
-seq(1, 10, 2)`
-  li:nth-child(#{n}) {
-    background-color: hsl(
-      #{360 / n}, #{20 * n}%, #{100 - n * 10}%
-    );
-  }
-`
-```
-
 ## License
 MIT
