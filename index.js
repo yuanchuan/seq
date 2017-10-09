@@ -10,9 +10,23 @@ function range(start = 1, stop, step) {
   if (Array.isArray(start)) return start;
   let ret = [];
   switch (arguments.length) {
+    case 0:
     case 1: [stop, start, step] = [start, 1, 1]; break;
-    case 2: if (start > stop) step = -1;
+    case 2: {
+      [start, stop, step] = [start, stop, 1];
+      if (start > stop) step = -1;
+      break;
+    }
+    default: {
+      if ((stop - start) * step < 0 || step == 0) {
+        throw new Error(`
+          Invalid range value and step:
+          ${ start} ${ stop } ${ step }
+        `);
+      }
+    }
   }
+
   for (let i = start; ;i += step) {
     if ( (start <= stop && i > stop)
       || (start >= stop && i < stop)) break;
